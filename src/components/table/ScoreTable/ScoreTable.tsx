@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './ScoreTable.css';
-import { UserDataType } from '../../../types';
 import TableRow from '../TableRow/TableRow';
+import { userDataSelector } from '../../../redux/users/selector';
+import { useDispatch, useSelector } from 'react-redux';
+import { startEventsListening, stopEventsListening } from '../../../redux/users/action';
 
 /**
  * Component for displaying user scores
@@ -9,12 +11,17 @@ import TableRow from '../TableRow/TableRow';
  * @return JSX.Element
  */
 const ScoreTable: React.FC = () => {
-  const mockData: UserDataType[] = [
-    { player: 'Alex', score: 211 },
-    { player: 'Ed', score: 112 },
-  ];
+  const dispatch = useDispatch();
+  const users = useSelector(userDataSelector);
 
-  const tableRowDataBlock = mockData.map((user) => {
+  useEffect(() => {
+    dispatch(startEventsListening());
+    return () => {
+      dispatch(stopEventsListening());
+    };
+  }, []);
+
+  const tableRowDataBlock = users.map((user) => {
     return (
       <TableRow key={user.player} user={user} />
     );

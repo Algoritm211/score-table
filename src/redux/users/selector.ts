@@ -1,5 +1,5 @@
 import { RootState } from '..';
 
-export const userSelector = (state: RootState) => {
+export const userDataSelector = (state: RootState) => {
   return state.user.userData;
 };
