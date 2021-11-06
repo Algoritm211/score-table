@@ -16,7 +16,6 @@ import { UserDataType } from '../../../types';
 const ScoreTable: React.FC = () => {
   const dispatch = useDispatch();
   const users = useSelector(getSortedUsers);
-
   // Getting users from cache
   const loadSavedUsers = async () => {
     const savedUsers = await storage.getUsersFromStorage('users') as UserDataType[];

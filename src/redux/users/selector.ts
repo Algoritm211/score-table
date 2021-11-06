@@ -15,13 +15,13 @@ export const getSortedUsers = createSelector(
   (users, sortParam) => {
     // For preventing mutating state
     const usersArr = [...users];
-    // @ts-ignore
     return usersArr.sort((a, b) => {
       if (sortParam === 'ascending') {
         return a.score - b.score;
       } else if (sortParam === 'descending') {
         return b.score - a.score;
       }
+      return 1;
     });
   },
 );

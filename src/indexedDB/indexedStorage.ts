@@ -18,7 +18,6 @@ class IndexedStorage {
       return;
     }
     await this.store.setItem(key, [...items as UserDataType[], value]);
-    console.log(items);
   }
 
   getUsersFromStorage = async (key: string) => {
