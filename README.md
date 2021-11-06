@@ -1,46 +1,25 @@
-# Getting Started with Create React App
+This app was built using [Tailwind](https://tailwindcss.com/) and [React](https://reactjs.org/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+  <div>
+      <img src="https://github.com/Algoritm211/tailwind-test/actions/workflows/eslint.yml/badge.svg">
+      <img src="https://img.shields.io/badge/license-MIT-blue.svg">
+  </div>
+</div>
 
-## Available Scripts
 
-In the project directory, you can run:
+# Run app on your machine
 
-### `npm start`
+1. Clone app to your computer (`git clone https://github.com/Algoritm211/tailwind-test.git`)
+2. Run `npm install` to install all libraries (dependencies) of project
+3. Run `npm run start:app` to start application on `https://localhost:3000` (server will be on `http://localhost:5000`)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### You can see some screenshots of app below:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="center">
+   <img src="https://drive.google.com/uc?export=view&id=1vDoGg2uv30wazkKFq92me-Rn63Ll7ld5" width=800 height=500>
+   <img src="https://drive.google.com/uc?export=view&id=1Cir0mJo45oVo--Grt3AqLP7liF5yU-GE" width=800 height=500>
+   <br />
+   <img src="https://drive.google.com/uc?export=view&id=1Gv-45cjqzb7ZeQS-4StPJOiDy1ppvypi" width=400 height=700>
+   <img src="https://drive.google.com/uc?export=view&id=1GuvdwfIQjoDB4blhX8Obncw5YQsNAmHN" width=400 height=700>
+</p>  
