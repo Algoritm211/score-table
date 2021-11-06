@@ -1,4 +1,5 @@
 import { UserDataType } from '../types';
+import storage from '../indexedDB/indexedStorage';
 
 let sse: EventSource | null = null;
 
@@ -8,6 +9,7 @@ let subscribers = {
 
 const subscribeMessages = (event: MessageEvent) => {
   const userData = JSON.parse(event.data);
+  storage.setUsersToStorage('users', userData);
   subscribers['messages-consumers'].forEach(subscriber => subscriber(userData));
 };
 

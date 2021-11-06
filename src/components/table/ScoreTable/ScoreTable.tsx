@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 import './ScoreTable.css';
 import TableRow from '../TableRow/TableRow';
-import { userDataSelector } from '../../../redux/users/selector';
+import { getSortedUsers } from '../../../redux/users/selector';
 import { useDispatch, useSelector } from 'react-redux';
 import { startEventsListening, stopEventsListening } from '../../../redux/users/action';
+import storage from '../../../indexedDB/indexedStorage';
+import { addPlayersToState } from '../../../redux/users/reducer';
+import { UserDataType } from '../../../types';
 
 /**
  * Component for displaying user scores
@@ -12,7 +15,19 @@ import { startEventsListening, stopEventsListening } from '../../../redux/users/
  */
 const ScoreTable: React.FC = () => {
   const dispatch = useDispatch();
-  const users = useSelector(userDataSelector);
+  const users = useSelector(getSortedUsers);
+
+  // Getting users from cache
+  const loadSavedUsers = async () => {
+    const savedUsers = await storage.getUsersFromStorage('users') as UserDataType[];
+    if (savedUsers) {
+      dispatch(addPlayersToState(savedUsers));
+    }
+  };
+
+  useEffect(() => {
+    loadSavedUsers();
+  }, []);
 
   useEffect(() => {
     dispatch(startEventsListening());
