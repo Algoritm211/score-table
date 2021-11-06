@@ -1,12 +1,15 @@
 import React from 'react';
 import Header from './components/Header/Header';
+import ScoreTable from './components/table/ScoreTable/ScoreTable';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <main>
       <Header />
-      Hello, tailwind
-    </div>
+      <section className='container px-4 mx-auto'>
+        <ScoreTable />
+      </section>
+    </main>
   );
 };
 

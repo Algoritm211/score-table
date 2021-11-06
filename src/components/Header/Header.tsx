@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './Header.css';
 
-const Header = () => {
+const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className='header-2'>
+    <header>
       <nav className='bg-white py-2 md:py-4'>
         <div className='container px-4 mx-auto md:flex md:items-center'>
           <div className='flex justify-between items-center'>
@@ -30,7 +30,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 
