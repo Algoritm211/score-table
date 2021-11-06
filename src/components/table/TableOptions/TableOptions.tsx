@@ -24,11 +24,11 @@ const TableOptions = () => {
   };
 
   return (
-    <div className='m-5'>
+    <div className='my-5'>
       <label className="block text-left">
         <span className="text-indigo-600 mx-1">Выберите сортировку:</span>
         <select
-          className="form-select block w-full md:w-1/3 mt-1"
+          className="bg-indigo-200 py-1 form-select w-full md:w-1/3 md:mx-2 mt-1"
           onChange={onSelectChange}
           value={selectValue}
         >

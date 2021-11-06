@@ -4,10 +4,10 @@ import TableOptions from '../../components/table/TableOptions/TableOptions';
 
 const MainPage = () => {
   return (
-    <div>
+    <>
       <TableOptions />
       <ScoreTable />
-    </div>
+    </>
   );
 };
 
