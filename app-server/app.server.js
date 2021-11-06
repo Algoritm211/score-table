@@ -14,12 +14,12 @@ http
       });
 
       setInterval(() => {
-        response.write(`data: ${
-          JSON.stringify({
-            player: `${faker.name.firstName()} ${faker.name.lastName()}`,
-            score: Math.round(Math.random()  * 1000)
-          })
-        }`);
+        const clientData = JSON.stringify({
+          player: `${faker.name.firstName()} ${faker.name.lastName()}`,
+          score: Math.round(Math.random()  * 1000)
+        });
+
+        response.write(`data: ${clientData}`);
         response.write("\n\n");
       }, 3000);
     } else {

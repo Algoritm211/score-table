@@ -9,7 +9,6 @@ export const userSlice = createSlice({
   },
   reducers: {
     addPlayerToState: (state, action: PayloadAction<UserDataType>) => {
-      console.log('addPlayerToState');
       state.userData.push(action.payload);
     },
   },
