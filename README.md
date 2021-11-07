@@ -2,7 +2,7 @@ This app was built using [Tailwind](https://tailwindcss.com/) and [React](https:
 
 <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
   <div>
-      <img src="https://github.com/Algoritm211/tailwind-test/actions/workflows/eslint.yml/badge.svg">
+      <img src="https://github.com/Algoritm211/score-table/actions/workflows/eslint.yml/badge.svg">
       <img src="https://img.shields.io/badge/license-MIT-blue.svg">
   </div>
 </div>
@@ -10,7 +10,7 @@ This app was built using [Tailwind](https://tailwindcss.com/) and [React](https:
 
 # Run app on your machine
 
-1. Clone app to your computer (`git clone https://github.com/Algoritm211/tailwind-test.git`)
+1. Clone app to your computer (`git clone https://github.com/Algoritm211/score-table.git`)
 2. Run `npm install` to install all libraries (dependencies) of project
 3. Run `npm run start:app` to start application on `https://localhost:3000` (server will be on `http://localhost:5000`)
 
