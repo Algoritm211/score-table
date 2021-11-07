@@ -4,6 +4,10 @@ import { addPlayerToState } from './reducer';
 
 let _eventHandler: ((data: UserDataType) => void) | null = null;
 
+/**
+ * Creating handler for transfer events from server to Redux
+ * @param dispatch
+ */
 export const eventHandlerCreator = (dispatch: Dispatch) => {
   if (_eventHandler === null) {
     _eventHandler = (messageUser ) => {

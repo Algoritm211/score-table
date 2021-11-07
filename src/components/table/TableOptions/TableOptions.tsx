@@ -3,7 +3,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import { setSortingType, sortingTypeValues } from '../../../redux/users/reducer';
 import { sortSelector } from '../../../redux/users/selector';
 
-const TableOptions = () => {
+/**
+ * Component for table options, such as sorting
+ * @return JSX.Element
+ */
+const TableOptions: React.FC = () => {
   const dispatch = useDispatch();
   const sortingType = useSelector(sortSelector);
   const [selectValue, setSelectValue] = useState(sortingType);

@@ -5,6 +5,11 @@ type TableRowPropsType = {
   user: UserDataType
 }
 
+/**
+ * Table row with user's data
+ *
+ * @return JSX.Element
+ */
 const TableRow: React.FC<TableRowPropsType> = ({ user }) => {
   return (
     <tr>

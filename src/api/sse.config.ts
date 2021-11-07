@@ -36,6 +36,9 @@ const createChannel = () => {
   sse.addEventListener('message', subscribeMessages);
 };
 
+/**
+ * An api for working with events (subscribe/unsubscribe)
+ */
 export const EventsAPI = {
   start() {
     createChannel();

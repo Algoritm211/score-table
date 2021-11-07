@@ -9,6 +9,7 @@ export const sortSelector = (state: RootState) => {
   return state.user.sortingType;
 };
 
+// Using reselect for better user experience (without additional rerender)
 export const getSortedUsers = createSelector(
   userDataSelector,
   sortSelector,

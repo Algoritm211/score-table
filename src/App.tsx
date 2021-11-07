@@ -4,6 +4,10 @@ import Header from './components/Header/Header';
 import MainPage from './pages/MainPage/MainPage';
 import AuthorPage from './pages/AuthorPage/AuthorPage';
 
+/**
+ * Main component of my app
+ * @return JSX.Element
+ */
 const App: React.FC = () => {
   return (
     <main>

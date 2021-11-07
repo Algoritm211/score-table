@@ -1,7 +1,9 @@
 import localforage from 'localforage';
 import { UserDataType } from '../types';
 
-
+/**
+ * Class for working with indexedDB for caching user's data
+ */
 class IndexedStorage {
   private store: LocalForage
 
